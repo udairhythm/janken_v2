@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>v2.0確率変動カウントダウンじゃんけん</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+
+<body>
+    <div class="janken_body">
+        <div class="main_title">確率変動カウントダウンじゃんけん</div>
+        <div class="rule">このじゃんけんは、20秒間で何回勝てるかを競うゲームです。<br>
+            ただし出る手の確率は時間経過とともに変化します。<br>
+            20秒終了時の勝ち数が高いほど高得点となります。</div>
+
+        <div class="timewin">
+            <div class="time">TIME</div>
+            <div class="win">WIN</div>
+        </div>
+        <div class="countbox">
+            <div id="timer">20</div>
+            <div id="winCount">0</div>
+        </div>
+        <div id="Rejan2">じゃんけん・・・</div>
+        <p><img id="jankenpon" src="images/jan0.png"></p>
+       
+
+        <div class="myhand">
+            <input onclick="R_Click(0);" type="image" src="img/rdesign_rock.png" class="rock_btn">
+            <input onclick="R_Click(1);" type="image" src="img/rdesign_scissors.png" class="scissors_btn">
+            <input onclick="R_Click(2);" type="image" src="img/rdesign_paper.png" class="paper_btn">
+        </div>
+
+        <div class="reset_btn">
+            <button onclick="re();" class="reset">スタート</button>
+        </div>
+        <div id="Rejan1"></div>
+
+
+    </div>
+
+    <script src="js/simplejan.js"></script>
+    
+</body>
+</html>
+
+
+
+
+            <!-- <button onclick="R_Click(0);"><img src="img/rdesign_rock.png" alt="rock"></button>
+            <button onclick="R_Click(1);"><img src="img/rdesign_scissors.png" alt="scissors"></button>
+            <button onclick="R_Click(2);"><img src="img/rdesign_paper.png" alt="paper"></button> -->

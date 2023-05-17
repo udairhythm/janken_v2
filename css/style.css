@@ -1,0 +1,94 @@
+.janken_body {
+    text-align:center;
+}
+
+.main_title {
+    font-size: 38px;
+    padding: 20px;
+    font-weight: bold;
+}
+
+.rule {
+    padding: 10px;
+    font-size: 20px;
+}
+
+.timewin {
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+}
+
+.time {
+    font-size: 30px;
+    margin-right: 110px;
+
+}
+
+.win {
+    font-size: 30px;
+    margin-left: 100px;
+}
+
+.countbox {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+#timer {
+    font-size: 40px;
+    border: black 5px double;
+    font-weight: bold;
+    width: 200px;
+    height: 80px;
+    margin-right: 33px;
+}
+
+#winCount {
+    font-size: 40px;
+    border: black 5px double;
+    font-weight: bold;
+    width: 200px;
+    height: 80px;
+    margin-left: 33px;
+}
+
+#Rejan2 {
+    font-size: 30px;
+    margin-top: 40px;
+}
+
+#jankenpon {
+    width: 500px;
+}
+
+.myhand {
+    margin:10px;
+}
+
+.rock_btn {
+    width: 400px;
+}
+
+.scissors_btn {
+    width: 400px;
+}
+
+.paper_btn {
+    width: 400px;
+}
+
+.reset_btn {
+    margin:10px;
+    text-align: center;
+}
+
+.reset {
+    padding: 10px 40px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #ffd61a;
+    border-color: #fff;
+    color: #fff;
+}
