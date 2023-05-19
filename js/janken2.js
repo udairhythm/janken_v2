@@ -109,103 +109,42 @@ const weightedRandom = () => {
     })();
   };
   picChange();
+
+  
+  // let leaderboard = [];
+
+  // const updateLeaderboard = () => {
+  //     // Here, I am using random names and current date for simplicity.
+  //     // In actual implementation, you would use the user's information.
+  //     let name = "User" + Math.floor(Math.random() * 100);
+  //     let date = new Date().toLocaleDateString();
+
+  //     leaderboard.push({ name: name, wins: winCount, date: date });
+
+  //     // Sort the leaderboard by wins in descending order.
+  //     leaderboard.sort((a, b) => b.wins - a.wins);
+
+  //     // Keep only the top 10 entries.
+  //     if (leaderboard.length > 10) {
+  //         leaderboard.length = 10;
+  //     }
+
+  //     // Update the leaderboard table.
+  //     let tableBody = document.querySelector("#leaderboardTable tbody");
+  //     tableBody.innerHTML = "";
+
+  //     leaderboard.forEach((entry, index) => {
+  //         let row = tableBody.insertRow();
+  //         let cellRank = row.insertCell(0);
+  //         let cellName = row.insertCell(1);
+  //         let cellWins = row.insertCell(2);
+  //         let cellDate = row.insertCell(3);
+
+  //         cellRank.textContent = index + 1;
+  //         cellName.textContent = entry.name;
+  //         cellWins.textContent = entry.wins;
+  //         cellDate.textContent = entry.date;
+  //     });
+  // };
   
 
-
-//カウントダウンあり
-// const img = [
-//     'img/rdesign_rock.png',
-//     'img/rdesign_scissors.png',
-//     'img/rdesign_paper.png',
-//   ];
-  
-//   let changeLoop = false;
-//   let timer = 20;
-//   let timerId;
-//   let winCount = 0;
-//   let gameActive = false;
-  
-//   const R_Click = p_janken_r => {
-//     if (!gameActive) return;
-//     changeLoop = false;
-//     const janken_r = Math.floor( Math.random() * 3);
-//     jankenpon.src= img[janken_r];
-//     const result = ['あいこ', '負け～', '勝ち！'][(3 + p_janken_r - janken_r) % 3];
-//     Rejan2.textContent = result;
-//     if (result === '勝ち！') {
-//       winCount++;
-//       document.getElementById('winCount').textContent = '勝ち数: ' + winCount;
-//     }
-//   };
-  
-//   const re = () => {
-//     if (gameActive) return;
-//     gameActive = true;
-//     winCount = 0;
-//     document.getElementById('winCount').textContent = '勝ち数: ' + winCount;
-//     picChange();
-//     Rejan2.textContent = "じゃんけん・・・";
-//     timer = 20;
-//     document.getElementById('timer').textContent = timer;
-//     timerId = setInterval(countDown, 1000);
-//   };
-  
-//   const countDown = () => {
-//     timer--;
-//     document.getElementById('timer').textContent = timer;
-//     if (timer === 0) {
-//       clearInterval(timerId);
-//       gameActive = false;
-//       Rejan2.textContent = "時間切れ！";
-//     }
-//   };
-  
-//   const picChange = () => {
-//     if (changeLoop) return;
-//     changeLoop = true;
-//     let count = 0;
-//     (function loop() {
-//       if (changeLoop) {
-//         jankenpon.src = img[++count % 3];
-//         setTimeout(loop, 100);
-//       }
-//     })();
-//   };
-//   picChange();
-  
-
-
-
-//シンプルじゃんけん
-// const img = [
-//   'img/rdesign_rock.png',
-//   'img/rdesign_scissors.png',
-//   'img/rdesign_paper.png',
-// ];
-
-// let changeLoop = false;
-
-// const R_Click = p_janken_r => {
-//   changeLoop = false;
-//   const janken_r = Math.floor( Math.random() * 3);
-//   jankenpon.src= img[janken_r];
-//   Rejan2.textContent = ['あいこ', '負け～', '勝ち！'][(3 + p_janken_r - janken_r) % 3];
-// };
-
-// const re = () => {
-//   picChange();
-//   Rejan2.textContent = "じゃんけん・・・";
-// };
-
-// const picChange = () => {
-//   if (changeLoop) return;
-//   changeLoop = true;
-//   let count = 0;
-//   (function loop() {
-//     if (changeLoop) {
-//       jankenpon.src = img[++count % 3];
-//       setTimeout(loop, 100);
-//     }
-//   })();
-// };
-// picChange();
