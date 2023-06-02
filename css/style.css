@@ -1,8 +1,6 @@
 .janken_body {
-    text-align:center;
+    text-align: center;
 }
-
-
 
 .main_title {
     font-size: 38px;
@@ -10,48 +8,49 @@
     font-weight: bold;
 }
 
-
+.username_input {
+    font-weight: bold;
+    padding: 20px;
+    
+}
 
 /* 背景 */
-.wrapper { 
+.wrapper {
     height: 100%;
     width: 100%;
-    left:0;
+    left: 0;
     right: 0;
     top: 0;
     bottom: 0;
     position: absolute;
-  background: linear-gradient(124deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3);
-  background-size: 1800% 1800%;
-  z-index: -1;
-  
-  -webkit-animation: rainbow 18s ease infinite;
-  -z-animation: rainbow 18s ease infinite;
-  -o-animation: rainbow 18s ease infinite;
-    animation: rainbow 18s ease infinite;}
-  
-  @-webkit-keyframes rainbow {
-      0%{background-position:0% 82%}
-      50%{background-position:100% 19%}
-      100%{background-position:0% 82%}
-  }
-  @-moz-keyframes rainbow {
-      0%{background-position:0% 82%}
-      50%{background-position:100% 19%}
-      100%{background-position:0% 82%}
-  }
-  @-o-keyframes rainbow {
-      0%{background-position:0% 82%}
-      50%{background-position:100% 19%}
-      100%{background-position:0% 82%}
-  }
-  @keyframes rainbow { 
-      0%{background-position:0% 82%}
-      50%{background-position:100% 19%}
-      100%{background-position:0% 82%}
-  }
-  
+    background: linear-gradient(
+        124deg,
+        #ff2400,
+        #e81d1d,
+        #e8b71d,
+        #e3e81d,
+        #1de840,
+        #1ddde8,
+        #2b1de8,
+        #dd00f3,
+        #dd00f3
+    );
+    background-size: 1800% 1800%;
+    z-index: -1;
+    animation: rainbow 18s ease infinite;
+}
 
+@keyframes rainbow {
+    0% {
+        background-position: 0% 82%;
+    }
+    50% {
+        background-position: 100% 19%;
+    }
+    100% {
+        background-position: 0% 82%;
+    }
+}
 
 .rule {
     padding: 10px;
@@ -67,7 +66,6 @@
 .time {
     font-size: 30px;
     margin-right: 110px;
-
 }
 
 .win {
@@ -109,7 +107,7 @@
 }
 
 .myhand {
-    margin:10px;
+    margin: 10px;
 }
 
 .rock_btn {
@@ -125,7 +123,7 @@
 }
 
 .reset_btn {
-    margin:10px;
+    margin: 10px;
     text-align: center;
 }
 
@@ -138,11 +136,33 @@
     color: #fff;
 }
 
-table th, table td {
-    width: 200px;
-    text-align: center;
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 70px;
 }
 
+th,
 td {
+    padding: 10px;
+    text-align: center;
     border: 1px solid #000;
+}
+
+th {
+    background-color: #f5f5f5;
+    font-weight: bold;
+}
+
+td:first-child {
+    width: 10%;
+}
+
+td:nth-child(2) {
+    width: 40%;
+}
+
+td:nth-child(3),
+td:nth-child(4) {
+    width: 25%;
 }
