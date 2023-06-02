@@ -12,20 +12,23 @@
 
 
 <body>
-
-    <!-- <div class="wrapper"></div> -->
-
-
     <div class="janken_body">
         <div class="main_title">確率変動カウントダウンじゃんけん</div>
         <div class="rule">このじゃんけんは、20秒間で何回勝てるかを競うゲームです。<br>
-            ただし出る手の確率は時間経過とともに変化します。<br>
-            20秒終了時の勝ち数が高いほど高得点となります。</div>
+            ただし出る手の確率は時間経過とともに変化します。20秒終了時の勝ち数が高いほど高得点となります。</div>
+            
+
+        <!-- ユーザー名入力 -->
+        <div class="username_input">
+            <label for="username">Your name:</label>
+            <input type="text" id="username" name="username">
+        </div>
 
         <div class="timewin">
             <div class="time">TIME</div>
             <div class="win">WIN</div>
         </div>
+
 
         <!-- タイマー、WINカウンター -->
         <div class="countbox">
@@ -50,24 +53,16 @@
         </div>
         <div id="Rejan1"></div>
 
-        <!-- リーダーボードを追加 -->
-        <!-- <div class="leaderboard"> -->
-            <table>
-                <tr>
-                    <th>Rank</th>
-                    <th>Name</th>
-                    <th>Wins</th>
-                    <th>Date</th>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>AAA</td>
-                    <td>10</td>
-                    <td>2021/10/10</td>
-                </tr>
-            </table>
-        <!-- </div> -->
 
+        <!-- リーダーボード -->
+        <table id="leaderboard">
+            <tr>
+                <th>Rank</th>
+                <th>Name</th>
+                <th>Wins</th>
+                <th>Date</th>
+            </tr>
+        </table>
 
         <div>
             <audio controls src="audio/さみしいおばけと東京の月.mp3"  autoplay loop></audio>
